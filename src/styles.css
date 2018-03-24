@@ -1,0 +1,275 @@
+@import 'bootstrap/dist/css/bootstrap.min.css';
+body, html {
+	height: 100%;
+}
+
+.logo {
+	font-family: 'Goudy Stout';
+	color: #2319e9;
+	font-weight: bold;
+}
+
+.logo-sidebar {
+	font-family: 'Goudy Stout';
+	color: #FFFFFF;
+	font-weight: bold;
+}
+
+li.page-item.active {
+	pointer-events: none;
+}
+
+.page-item.active .page-link {
+	z-index: 0 !important;
+}
+
+@font-face {
+	font-family: 'Material Icons';
+	font-style: normal;
+	font-weight: 400;
+	src: url(../node_modules/material-design-icons/iconfont/MaterialIcons-Regular.woff2) format('woff2');
+	src: url(../node_modules/material-design-icons/iconfont/MaterialIcons-Regular.woff) format('woff');
+	src: url(../node_modules/material-design-icons/iconfont/MaterialIcons-Regular.ttf) format('truetype');
+}
+
+.material-icons {
+	font-family: 'Material Icons';
+	font-weight: normal;
+	font-style: normal;
+	font-size: 24px;
+	display: inline-block;
+	line-height: 1;
+	text-transform: none;
+	letter-spacing: normal;
+	word-wrap: normal;
+	white-space: nowrap;
+	direction: ltr;
+	-webkit-font-smoothing: antialiased;
+	text-rendering: optimizeLegibility;
+	-moz-osx-font-smoothing: grayscale;
+	font-feature-settings: 'liga';
+}
+
+.material-icons.md-18 {
+	font-size: 17px;
+}
+
+.material-icons_direction {
+	vertical-align: bottom;
+}
+
+.label-form {
+	color: #313131;
+	font-size: 15px;
+}
+
+.fc-center h2 {
+	font-size: 24px;
+	color: #313131;
+	line-height: 35px;
+}
+
+/*==========================================================================
+MENU HAMBURGUER
+========================================================================== */
+
+.menu-trigger {
+	width: 40px;
+	height: 40px;
+	opacity: 1;
+	cursor: pointer;
+	pointer-events: all;
+	transition: all 0.5s ease;
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	transform: translate3d(0, 0, 0);
+	-webkit-transform: translate3d(0, 0, 0);
+	-moz-transform: translate3d(0, 0, 0);
+}
+
+.menu-trigger .line-wrap .line {
+	background-color: #3c4e74;
+}
+
+.menu-trigger:hover, .menu-trigger:focus {
+	background-color: #edf2f5;
+	border-radius: 50%;
+	-webkit-border-radius: 50%;
+	width: 40px;
+	height: 40px;
+	-webkit-transform: scale(1);
+	-ms-transform: scale(1);
+	-o-transform: scale(1);
+	transform: scale(1);
+}
+
+.menu-trigger:before {
+	content: "";
+	position: absolute;
+	top: -15px;
+	left: 7px;
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	background: rgb(32, 145, 209);
+	-webkit-transition: all;
+	-o-transition: all;
+	transition: all;
+	-webkit-transition-duration: 300ms;
+	transition-duration: 300ms;
+	-webkit-backface-visibility: hidden;
+	-moz-backface-visibility: hidden;
+	backface-visibility: hidden;
+	-webkit-transform: scale(0);
+	-ms-transform: scale(0);
+	-o-transform: scale(0);
+	transform: scale(0);
+	z-index: 0;
+}
+
+.menu-trigger.open:before {
+	-webkit-transform: scale(1);
+	-ms-transform: scale(1);
+	-o-transform: scale(1);
+	transform: scale(1);
+}
+
+#ms-menu-trigger2 .line-wrap .line {
+	background-color: #717171;
+}
+
+.line-wrap {
+	width: 18px;
+	height: 12px;
+	-webkit-transition: all;
+	-o-transition: all;
+	transition: all;
+	-webkit-transition-duration: 300ms;
+	transition-duration: 300ms;
+	margin: 0 auto;
+	padding-top: 14px;
+}
+
+.line-wrap .line {
+	width: 18px;
+	height: 2px;
+	-webkit-transition: all;
+	-o-transition: all;
+	transition: all;
+	-webkit-transition-duration: 300ms;
+	transition-duration: 300ms;
+}
+
+.line-wrap .line.center {
+	margin: 3px 0;
+}
+
+/*==========================================================================
+GENERALES
+========================================================================== */
+
+.box-shadow {
+	-webkit-box-shadow: 0 1px 5px -1px rgba(0, 0, 0, 0.1);
+	-moz-box-shadow: 0 1px 5px -1px rgba(0, 0, 0, 0.1);
+	box-shadow: 0 1px 5px -1px rgba(0, 0, 0, 0.1);
+}
+
+.separador-derecha {
+	border-right: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.separador-abajo {
+	border-bottom: 2px solid #fc0;
+}
+
+.separador-arriba {
+	border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.fondo-color_one {
+	background-color: #ffffff !important;
+}
+
+/*==========================================================================
+TABLAS
+========================================================================== */
+
+.table {
+	font-size: 13px;
+	border: 1px solid #e5e5e5;
+	margin: 0px !important;
+}
+
+.table thead {
+	color: #313131;
+}
+
+.table tbody {
+	color: #A7ADB1;
+	font-weight: 300;
+	letter-spacing: .4px;
+}
+
+.table td, .table th {
+	padding: .5rem;
+	vertical-align: middle;
+	border-top: 1px solid #dee2e6;
+}
+
+.table tbody tr:hover, .table tbody tr.checked {
+	color: #313131;
+	background-color: #DBF1F5;
+}
+
+::-webkit-scrollbar {
+	width: 8px;
+}
+
+::-webkit-scrollbar-button {
+	width: 8px;
+	height: 5px;
+}
+
+::-webkit-scrollbar-track {
+	background: rgb(57, 55, 167);
+}
+
+::-webkit-scrollbar-thumb {
+	background: rgb(57, 55, 167);
+}
+
+::-webkit-scrollbar-thumb:hover {
+	background: rgb(57, 55, 167);
+}
+
+.ng-valid[required], .ng-valid.required {
+	border-left: 5px solid #42A948;
+	border-color: #42A948;
+}
+
+.ng-invalid.ng-touched[required]:not(form) {
+	border-left: 5px solid #dc3545;
+	border-color: #dc3545;
+}
+
+.invalid-feedback {
+	display: block !important;
+}
+
+tr.checked {
+	color: #313131;
+	background-color: #fc0;
+	cursor: pointer;
+}
+
+.btn-prosegur, .btn-prosegur.disabled, .btn-prosegur:disabled {
+	color: #313131;
+	background-color: #f4b802;
+	border-color: #f4b802;
+}
+
+.custom-checkbox .custom-control-input:checked~.custom-control-label::before {
+	background-color: #f4b802;
+	color: #313131;
+}

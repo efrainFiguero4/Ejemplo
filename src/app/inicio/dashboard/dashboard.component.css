@@ -1,0 +1,89 @@
+/* Always set the map height explicitly to define the size of the div
+* element that contains the map. */
+
+#map {
+    height: 100%;
+    width: 100%
+}
+
+div#soli-div {
+    position: absolute;
+    top: 60px;
+    z-index: 5;
+    height: 95%;
+    width: 306px;
+    background-color: #fff;
+}
+
+div#cuadrilla-div {
+    position: absolute;
+    top: 5%;
+    right: 1%;
+    z-index: 5;
+    width: 20%;
+    background-color: #fff;
+    border: 1px solid #999;
+}
+
+div#salir-div {
+    bottom: 50%;
+    right: 5%;
+    z-index: 5;
+    width: 2.5%;
+}
+
+div#botonera-div {
+    position: absolute;
+    bottom: 2%;
+    width: 100%;
+}
+
+div#test-div {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 5;
+}
+
+#container {
+    position: relative;
+    width: 300px;
+    height: 200px;
+}
+
+#block {
+    background: #CCC;
+    filter: alpha(opacity=60);
+    /* IE */
+    -moz-opacity: 0.6;
+    /* Mozilla */
+    opacity: 0.6;
+    /* CSS3 */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 100%;
+    width: 100%;
+}
+
+#text {
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    vertical-align: middle;
+    text-align: center;
+}
+
+#text {
+    z-index: 10;
+}
+
+/* Optional: Makes the sample page fill the window. */
+
+html, body {
+    font-size: 12px;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}

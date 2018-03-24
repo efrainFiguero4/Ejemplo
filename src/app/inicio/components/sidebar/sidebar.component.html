@@ -1,0 +1,20 @@
+<div class="box-sidebar">
+	<div class="text-center pt-4">
+		<label class="logo-sidebar">social miners</label>
+		<!--img class="pb-3 mw-100" alt="Logo Empresa" src="assets/img/logo-blank.png"-->
+
+		<img class="px-3 py-3 mw-100 rounded-circle" width="200" src="assets/img/person.png" alt="Foto de perfil">
+
+		<h6 class="px-3 pt-0 titulo-sidebar">
+			email@outlook.com
+		</h6>
+	</div>
+	<hr>
+	<ul class="nav flex-column menu-apm">
+		<li class="nav-item" *ngFor="let m of menu">
+			<a class="nav-link p-3" [routerLink]="m.route" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+				<i class="material-icons float-left pr-2">{{m.icono}}</i>{{m.descripcion}}
+			</a>
+		</li>
+	</ul>
+</div>

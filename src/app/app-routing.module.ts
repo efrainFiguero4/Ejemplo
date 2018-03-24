@@ -1,21 +1,14 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { InicioComponent } from './inicio/components/inicio/inicio.component';
-import { LoginComponent } from './login/login.component';
-import { BuyComponent } from './inicio/buy/buy.component';
-import { DashboardComponent } from './inicio/dashboard/dashboard.component';
-import { SettingComponent } from './inicio/setting/setting.component';
+import { UsuarioComponent } from './inicio/usuario/usuario.component';
+import { DetalleComponent } from './inicio/detalle/detalle.component';
 
 const routes: Routes = [
-	{ path: '', redirectTo: 'login', pathMatch: 'full' },
-	{ path: 'login', component: LoginComponent },
+	{ path: '', redirectTo: 'usuario', pathMatch: 'full' },
 	{
-		path: 'inicio', component: InicioComponent,
+		path: 'usuario', component: UsuarioComponent,
 		children: [
-			{ path: '', redirectTo: 'buy', pathMatch: 'full' },
-			{ path: 'buy', component: BuyComponent },
-			{ path: 'dashboard', component: DashboardComponent },
-			{ path: 'setting', component: SettingComponent }
+			{ path: 'detalle/:id', component: DetalleComponent }
 		]
 	}
 ];

@@ -1,0 +1,29 @@
+<div class="container-fluid">
+	<h4 class="text-primary">Lista de usuarios</h4>
+	<!-- table-responsive -->
+	<table class="table  products-table">
+		<tr>
+			<th>Name</th>
+			<th>Username</th>
+			<th>Email</th>
+			<th>Phone</th>
+			<th>Website</th>
+			<th class="delete-column">Detalle</th>
+		</tr>
+		<!-- LISTA LOS USUARIOS OBTENIDOS -->
+		<tr *ngFor="let u of ls_user">
+			<td> {{u.name}} </td>
+			<td>{{u.username}}</td>
+			<td>{{u.email}}</td>
+			<td>{{u.phone}}</td>
+			<td>{{u.website}}</td>
+			<td>
+				<!-- SE REGISTRA EL ID DEL USUARIO SELECCIONADO EN EL PATH  -->
+				<button [routerLink]="['detalle', u.id]" class="btn btn-sm btn-success">Ver detalle</button>
+			</td>
+		</tr>
+	</table>
+	<div class="view-side-form">
+		<router-outlet></router-outlet>
+	</div>
+</div>

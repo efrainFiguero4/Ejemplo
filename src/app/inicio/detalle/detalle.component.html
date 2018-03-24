@@ -1,0 +1,74 @@
+<div class="side-form">
+	<div class="d-flex">
+		<button class="btn btn-primary" routerLink="/usuario">Volver</button>
+	</div>
+	<hr>
+	<!-- SE MUESTRA LOS DATOS DEL OBJETO USUARIO DONDE SE ALMACENA LA INFORMACION DEL USUARIO SELECCIONADO EN LA PANTALLA LISTA USUARIOS -->
+	<label class="text-primary">Direccion</label>
+	<div class="row">
+		<div class="col-sm-4">
+			<div class="form-group">
+				<label for="name">Street</label>
+				<input class="" readonly ype="text" [(ngModel)]="usuario.address.street" name="name" class="form-control" />
+			</div>
+		</div>
+		<div class="col-sm-4">
+			<div class="form-group">
+				<label for="name">Suite</label>
+				<input class="" readonly ype="text" [(ngModel)]="usuario.address.suite" name="price" class="form-control" />
+			</div>
+		</div>
+		<div class="col-sm-4">
+			<div class="form-group">
+				<label for="name">City</label>
+				<input class="" readonly ype="text" [(ngModel)]="usuario.address.city" name="price" class="form-control" />
+			</div>
+		</div>
+		<div class="col-sm-4">
+			<div class="form-group">
+				<label for="name">ZipCode</label>
+				<input class="" readonly ype="text" [(ngModel)]="usuario.address.zipcode" name="price" class="form-control" />
+			</div>
+		</div>
+	</div>
+
+
+	<label class="text-primary">Localizacion</label>
+
+	<div class="row">
+		<div class="col-sm-4">
+			<div class="form-group">
+				<label for="name">Latitud</label>
+				<input class="" readonly ype="text" [(ngModel)]="usuario.address.geo.lat" name="name" class="form-control" />
+			</div>
+		</div>
+		<div class="col-sm-4">
+			<div class="form-group">
+				<label for="name">Longitud</label>
+				<input class="" readonly ype="text" [(ngModel)]="usuario.address.geo.lng" name="price" class="form-control" />
+			</div>
+		</div>
+	</div>
+
+	<label class="text-primary">Compañia</label>
+	<div class="row">
+		<div class="col-sm-4">
+			<div class="form-group">
+				<label for="name">Name</label>
+				<input class="" readonly ype="text" [(ngModel)]="usuario.company.name" name="name" class="form-control" />
+			</div>
+		</div>
+		<div class="col-sm-4">
+			<div class="form-group">
+				<label for="name">CatchPhrase</label>
+				<input class="" readonly ype="text" [(ngModel)]="usuario.company.catchPhrase" name="price" class="form-control" />
+			</div>
+		</div>
+		<div class="col-sm-4">
+			<div class="form-group">
+				<label for="name">Bs</label>
+				<input class="" readonly ype="text" [(ngModel)]="usuario.company.bs" name="price" class="form-control" />
+			</div>
+		</div>
+	</div>
+</div>
